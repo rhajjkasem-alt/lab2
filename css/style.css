@@ -1,0 +1,106 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    padding: 20px;
+    background-color: #034037;
+    color: #fff;
+}
+
+header h1{
+    margin-bottom: 12px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+
+main {
+    padding: 20px;
+}
+
+.bio-hero {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #96c4bf;
+}
+
+.bio-hero h2 {
+    margin-bottom: 8px;
+}
+
+.card-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card {
+    flex-basis: 100%;
+    padding: 16px;
+    border: 1px solid #ccc;
+    background-color: #b6f4fa;
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    margin-bottom: 8px;
+}
+
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+    background-color: #034037;
+}
+
+@media (min-width: 768px) {
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header h1 {
+        margin-bottom: 0;
+    }
+    
+    nav {
+        flex-direction: row;
+    }
+
+    .card-grid {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .card {
+        flex-basis: 30%;
+    }
+}
